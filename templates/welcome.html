@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Sale Predictor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Videoyu diğer içeriklerin arkasına taşır */
+        }
+        .start-button-container {
+            position: absolute;
+            top: 80%;
+            text-align: center;
+            z-index: 1;
+        }
+        .start-button {
+            font-size: 2rem;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(255, 87, 51, 0.9);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .start-button:hover {
+            background-color: rgba(199, 0, 57, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="/static/Blue Illustration Game Presentation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="start-button-container">
+        <a href="/input"><button class="start-button">Start</button></a>
+    </div>
+</body>
+</html>
